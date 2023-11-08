@@ -1,0 +1,35 @@
+.subunit.SCT { fill: rgb(159, 235, 173); }
+.subunit.WLS { fill: rgb(235, 169, 122); }
+.subunit.NIR { fill: rgb(238, 158, 163); }
+.subunit.ENG { fill: rgb(215, 213, 236); }
+.subunit.IRL { fill: #dcf; }
+.subunit-boundary {
+    fill: none;
+    stroke: #777; 
+    stroke-dasharray: 2,2;
+    stroke-linejoin: round;
+  }
+  
+  .subunit-boundary.IRL {
+    stroke: #aaa;
+  }
+  .subunit-label {
+    fill: #fff;
+    fill-opacity: .8;
+    font-size: 20px;
+    font-weight: 300;
+    text-anchor: middle;
+  }
+  .tips{
+    position: absolute; 
+    display: none;
+    background-color: rgb(186, 237, 136);
+    color: rgb(15, 1, 1);
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  #reloadButton{
+    text-align: center;
+  }
