@@ -9,8 +9,22 @@
  
 </head>
 <body>
+    
+    <div><h1>United Kingdom Map showing Towns</h1></div>
     <div id="tooltip" class="tips"></div>
-    <button id="reloadButton">Reload Data</button>
+    
+
+    <div id="filterOptions">
+        <label for="populationFilter" style="font-size: 18px;">Filter Towns by Population Size:</label>
+        <select id="populationFilter">
+          <option value="all">All Size</option>
+          <option value="small">Small Towns (less than 30,000)</option>
+          <option value="medium">Medium Towns (30,000 - 60,000)</option>
+          <option value="large">Large Towns (more than 60,000)</option>
+        </select>
+        <button id="reloadButton" onclick="location.reload()">Reload Map Data</button>
+        
+      </div>
     <script  src="script.js"></script>
 </body>
 </html>

@@ -1,35 +1,87 @@
-.subunit.SCT { fill: rgb(159, 235, 173); }
-.subunit.WLS { fill: rgb(235, 169, 122); }
-.subunit.NIR { fill: rgb(238, 158, 163); }
+.subunit.SCT { fill: rgb(190, 226, 197); }
+.subunit.WLS { fill: rgb(241, 185, 144); }
+.subunit.NIR { fill: rgb(226, 175, 178); }
 .subunit.ENG { fill: rgb(215, 213, 236); }
-.subunit.IRL { fill: #dcf; }
+.subunit.IRL { fill: rgb(226, 209, 159); }
 .subunit-boundary {
     fill: none;
-    stroke: #777; 
+    stroke: #fff; 
     stroke-dasharray: 2,2;
     stroke-linejoin: round;
   }
   
   .subunit-boundary.IRL {
-    stroke: #aaa;
+    stroke: #cfd49a;
   }
   .subunit-label {
     fill: #fff;
-    fill-opacity: .8;
+    fill-opacity: .9;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
     text-anchor: middle;
   }
   .tips{
     position: absolute; 
     display: none;
-    background-color: rgb(186, 237, 136);
-    color: rgb(15, 1, 1);
+    background-color: rgb(13, 24, 1);
+    color: rgb(245, 241, 241);
+    opacity: .8;
+    font-weight: 300;
     padding-left: 20px;
     padding-right: 20px;
     border: 1px solid black;
     border-radius: 10px;
   }
-  #reloadButton{
-    text-align: center;
+  #reloadButton {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    transition: background-color 0.3s;
   }
+  #reloadButton:hover {
+    background-color: #196597;
+  }
+  
+  #filterOptions {
+    margin: 10px;
+  }
+  
+  #filterOptions label {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  #populationFilter {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  #populationFilter::-ms-expand {
+    display: none;
+  }
+  
+  #populationFilter::-webkit-inner-spin-button,
+  #populationFilter::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Style the options within the dropdown */
+  #populationFilter option {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Hover effect for dropdown options */
+  #populationFilter option:hover {
+    background-color: #f2f2f2;
+  }
+  
